@@ -1,75 +1,75 @@
-p{
-color: red;}
-
-img {
-    width: 100px;
-    height: 100px;
-}
-
-*{
-box-sizing:border-box
-}
-
-
-
-header{
-background: #cccccc;
+* {
+  box-sizing: border-box;
 }
 
 body {
-background-image:url("Arkadia2.jpg")
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-section{
-display: flex;
+header {
+  background-color: #008080;
+  padding: 20px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
 }
 
-nav {background: #cccccc;
-    width: 20%;
-    float: left
-    padding: 20px
-    height: 200px
-    flex:1;}
+section {
+  display: flex;
 
-   nav ul {
-   list-style-type:none;
-   padding: 0;
-   }
+}
+
+nav {
+  flex: 1;
+  width: 15%;
+  background: #ccc;
+  padding: 20px;
+}
+
+img {
+    width: 500px;
+    height: 400px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
 
 nav li {
     padding: 10px;
     margin: 10px:
-    background-color: #009800;
+    background-color: #cccccc;
     border-radius: 10px;
     border: 1px solid;
     text-align: center;
 }
 
 nav li:hover{
-    background-color: #009805;
-    border: 1px solid #009B05;
+    background-color: #F5F5F5;
+    border: 1px solid #778899;
 }
 
-article{
-    background-color: #f1f1f1
-    width: 80%
-    float:left
-    padding: 20px
-    flex:3;}
 
-section::after{
-    content: "";
-    display: table;
-    clear: both;
+article {
+  flex: 3;
+  width: 85%;
+  background-color: ##008080;
+  padding: 10px;
 }
+
 
 footer {
-    padding: 20px:
-    background-color: #777;
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
 }
 
-@media(max-width:600px){
-section {
+
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
     flex-direction: column;
-}
+  }
 }
