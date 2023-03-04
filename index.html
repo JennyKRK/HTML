@@ -7,7 +7,7 @@
 </head>
 
 
-<body onload="hideDiv()">
+<body onload="Version1()">
 <header>
     <h1>Moja podróż do Arkadii</h1>
 </header>
@@ -15,9 +15,12 @@
 <section>
     <nav>
         <ul>
-            <li onclick="hideDiv()">Podstawowe informacje</li>
+            <li onclick="Version1()">Podstawowe informacje</li>
 
-            <li onclick="showDiv()">Dojazd</li>
+            <li onclick="Version2()">Mapa</li>
+            <li onclick="Version3()">Dojazd</li>
+            <li onclick="Version4()">Galeria</li>
+            <li onclick="Version5()">Formularz kontaktowy</li>
         </ul>
         <ul>
             <li><a href = "https://pl.wikipedia.org/wiki/Arkadia_(powiat_%C5%82owicki)" target = _blank>Arkadia (wikipedia)</a></li>
@@ -71,10 +74,39 @@
           <h1>Dojazd</h1>
             <p>
             <ul>
-            <li><a href = "https://rozklad.pkp.pl/" target = _blank>Rozkłady PKP</a></li>
-            <li><a href = "https://jakdojade.pl/lista-miast" target = _blank>JakDojadęPL</a></li>
+            <li>
+
+                <button onclick="window.open('https://rozklad.pkp.pl/','_blank');" type="button">
+                    Rozkłady PKP</button>
+            </li>
+
+            <li>
+                <button onclick="window.open('https://jakdojade.pl/lista-miast','_blank');" type="button">
+                    JakDojadePL </button>
+
+            </li>
+
             </ul>
+            <img src="images/Lawka.jpg" alt="akwedukt" class="inline"/>
             </p>
+        </div>
+
+        <div id = "strona4">
+            <h1>Galeria zdjęć</h1>
+            <div class = gallery> <div class = "responsive"> <img src="images/Kosciol.jpg" alt="kosciol" width = 600 height = 400/> </div></div>
+            <div class = gallery> <div class = "responsive">  <img src="images/Luk.jpg" alt="luk" width = 600 height = 400/> </div></div>
+            <div class = gallery> <div class = "responsive"> <img src="images/Park.jpg" alt="park" width = 600 height = 400/> </div></div>
+            <div class = gallery><div class = "responsive">  <img src="images/Rzeka.jpg" alt="rzeka" width = 600 height = 400/> </div></div>
+        </div>
+
+        <div id = "strona5">
+            <form action="mailto:joannan@student.agh.edu.pl">
+                <label for="fname"> Imię </label>
+                <input type="text" id="fname" name="firstname" placeholder="twoje imię">
+                <textarea name="message"></textarea>
+
+                <input type="submit" value="wyślij wiadomość">
+            </form>
         </div>
 
     </article>
@@ -84,15 +116,51 @@
 <script>
 var divOne = document.getElementById('strona1');
 var divTwo = document.getElementById('strona2');
-function hideDiv(){
+var divThree = document.getElementById('strona3');
+var divFour = document.getElementById('strona4');
+var divFive = document.getElementById('strona5');
+
+function Version1(){
   divTwo.style.display ='none';
+  divThree.style.display ='none';
   divOne.style.display ='block';
+  divFour.style.display ='none';
+  divFive.style.display ='none';
 }
 
-function showDiv(){
+function Version2(){
   divTwo.style.display ='block';
   divOne.style.display ='none';
-}</script>
+  divThree.style.display ='none';
+  divFour.style.display ='none';
+  divFive.style.display ='none';
+}
+
+function Version3(){
+  divTwo.style.display ='none';
+  divOne.style.display ='none';
+  divThree.style.display ='block';
+  divFour.style.display ='none';
+  divFive.style.display ='none';
+}
+
+function Version4(){
+  divTwo.style.display ='none';
+  divOne.style.display ='none';
+  divThree.style.display ='none';
+  divFour.style.display ='block';
+  divFive.style.display ='none';
+}
+
+function Version5(){
+  divTwo.style.display ='none';
+  divOne.style.display ='none';
+  divThree.style.display ='none';
+  divFour.style.display ='none';
+  divFive.style.display ='block';
+}
+
+</script>
 
 
 </body>
