@@ -19,6 +19,32 @@ section {
 
 }
 
+button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    color: initial;
+    background-color: #4CAF50;
+
+      border: none;
+      color: white;
+      padding: 16px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      transition-duration: 0.4s;
+      cursor: pointer;
+}
+
+button:hover {
+  background-color: #008CBA;
+  color: white;
+  }
+
 nav {
   flex: 1;
   width: 15%;
@@ -64,6 +90,35 @@ footer {
   padding: 10px;
   text-align: center;
   color: white;
+}
+
+div.gallery{
+width: 180px;}
+
+div.gallery img{
+width: 100%;
+height: auto;
+}
+
+input[type=text], select {
+	width: 80%;
+	padding: 10px;
+	margin: 30px;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+
+}
+
+input[type=submit] {
+	width: 100%;
+	background-color: green;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+input[type=submit]:hover {
+	background-color: 45a049;
 }
 
 
