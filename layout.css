@@ -162,6 +162,9 @@ container {
     padding: 20px;
 }
 
+form {
+    text-align: center;
+}
 
 
 @media (max-width: 600px) {
