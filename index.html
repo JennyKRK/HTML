@@ -103,12 +103,22 @@
         </div>
 
         <div id = "strona5">
-            <form action="mailto:joannan@student.agh.edu.pl">
-                <label for="fname"> Imię </label>
-                <input type="text" id="fname" name="firstname" placeholder="twoje imię">
-                <textarea name="message"></textarea>
 
-                <input type="submit" value="wyślij wiadomość">
+            <form action="mailto:joannan@student.agh.edu.pl" method="post" enctype="text/plain">
+
+                Twoje Imię:<br>
+                <input type="text" name="name" placeholder="twoje imię"><br>
+                Twój E-mail:<br>
+                <input type="text" name="mail" placeholder="twój mail"><br>
+                Twoja wiadomość:<br>
+
+                <textarea name="body" size="200" placeholder="twoja wiadomość" rows="20"></textarea>
+                <br>
+                <input type="reset" value="Wyczyść pola">
+                <input type="submit" value="Wyślij wiadomość">
+
+
+
             </form>
         </div>
 
