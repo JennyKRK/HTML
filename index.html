@@ -93,11 +93,11 @@
             <h1 style="text-align:center;">Galeria zdjęć</h1>
             <div class = gallery>
                 <div class = "responsive">
-                    <img src="images/Park.jpg" title = "W pierwotnej wersji Arkadia miała być utrzymana w konwencji parku angielskiego">
+                    <img src="images/Park.jpg" title = "W pierwotnej wersji Arkadia miała być utrzymana w konwencji parku angielskiego.">
                     <img src="images/Rzeka.jpg" title = "Rzeka Skierniewka">
                     <img src="images/Kosciol.jpg" title = "Przybytek Arcykapłana">
                     <img src="images/Lawka.jpg" title = "Inspiracją do założenia tego parku była kultura starożytna oraz filozofia epoki romantyzmu.">
-                    <img src="images/Luk.jpg" title = "Cyrk - inspirowany budowlami starożytnego Rzymu">
+                    <img src="images/Luk.jpg" title = "Cyrk - inspirowany budowlami starożytnego Rzymu.">
 
 
                 </div>
@@ -145,45 +145,39 @@
     var divFour = document.getElementById('strona4');
     var divFive = document.getElementById('strona5');
 
-    function Version1(){
+    function hideAll(){
         divTwo.style.display ='none';
         divThree.style.display ='none';
-        divOne.style.display ='block';
+        divOne.style.display ='none';
         divFour.style.display ='none';
         divFive.style.display ='none';
     }
 
-    function Version2(){
+    function Version1(){
+        hideAll();
+        divOne.style.display ='block';
+    }
+
+     function Version2(){
+        hideAll();
         divTwo.style.display ='block';
-        divOne.style.display ='none';
-        divThree.style.display ='none';
-        divFour.style.display ='none';
-        divFive.style.display ='none';
     }
 
     function Version3(){
-        divTwo.style.display ='none';
-        divOne.style.display ='none';
+        hideAll();
         divThree.style.display ='block';
-        divFour.style.display ='none';
-        divFive.style.display ='none';
     }
 
     function Version4(){
-        divTwo.style.display ='none';
-        divOne.style.display ='none';
-        divThree.style.display ='none';
+        hideAll();
         divFour.style.display ='block';
-        divFive.style.display ='none';
     }
 
     function Version5(){
-        divTwo.style.display ='none';
-        divOne.style.display ='none';
-        divThree.style.display ='none';
-        divFour.style.display ='none';
+        hideAll();
         divFive.style.display ='block';
     }
+
 
 </script>
 
