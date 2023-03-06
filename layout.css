@@ -10,13 +10,49 @@ header {
   background-color: #008080;
   padding: 20px;
   text-align: center;
-  font-size: 35px;
+  font-size: 2vw;
   color: white;
 }
 
 section {
   display: flex;
+}
 
+nav {
+  float: left;
+  flex: 1;
+  width: 15%;
+  background: #ccc;
+  padding: 20px;
+}
+
+img {
+    max-width:70%;
+    height:auto
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav li {
+    padding: 10px;
+    margin: 10px:
+    background-color: #cccccc;
+    border-radius: 10px;
+    border: 1px solid;
+    text-align: center;
+
+}
+
+nav li:hover{
+    background-color: #F5F5F5;
+    border: 1px solid #778899;
+}
+
+li{
+    text-align: justify;
 }
 
 button {
@@ -45,38 +81,6 @@ button:hover {
   color: white;
   }
 
-nav {
-  flex: 1;
-  width: 15%;
-  background: #ccc;
-  padding: 20px;
-}
-
-img {
-    width: 500px;
-    height: 400px;
-}
-
-nav ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-nav li {
-    padding: 10px;
-    margin: 10px:
-    background-color: #cccccc;
-    border-radius: 10px;
-    border: 1px solid;
-    text-align: center;
-}
-
-nav li:hover{
-    background-color: #F5F5F5;
-    border: 1px solid #778899;
-}
-
-
 article {
   flex: 3;
   width: 85%;
@@ -86,26 +90,41 @@ article {
 
 
 footer {
-  background-color: #777;
+  background-color: #cccccc;
   padding: 10px;
   text-align: center;
   color: white;
 }
 
+div, iframe {
+    margin: 0 auto;
+}
+
+iframe {
+    display: block;
+    border-style:none;
+    width=600px;
+    height=400px;
+    frameborder="0";
+    style="border:0;";
+    allowfullscreen="";
+    aria-hidden="false";
+    tabindex="0";
+}
+
 div.gallery{
-    width: 1000px;
+
     line-height:0;
-    -webkit-column-count:2;
-    -webkit-column-gap:5px;
-    -moz-column-count:2;
-    -moz-column-gap:5px;
+    webkit-column-count:2;
+    webkit-column-gap:5px;
+    moz-column-count:2;
+    moz-column-gap:5px;
     column-count:2;
     column-gap:5px;
-
 }
 
 div.gallery img{
-    width: 100%;
+    max-width: 100%;
     height: auto;
     margin-bottom:5px;
     filter: grayscale(100%);
@@ -166,10 +185,22 @@ form {
     text-align: center;
 }
 
-
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   section {
     -webkit-flex-direction: column;
-    flex-direction: column;
+     flex-direction: column;
   }
+  footer{
+    display: none;
+  }
+  nav{
+    width: 100%;
+  }
+  iframe{
+    max-width:100%;
+    height:auto;
+  }
+  }
+}
+
 }
